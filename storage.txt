@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="sidebar">
+            <ul>
+                <li><h1>Dashboard</h1></li>
+            </ul>
+            
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Messages</a></li>
+                <li><a href="">History</a></li>
+                <li><a href="">Tasks</a></li>
+                <li><a href="">Communities</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Settings</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Privacy</a></li>
+            </ul>
+           
+
+        </div>
+        
+
+        <div class="header">
+            <div>search box </div>
+            <div>profile photo </div>
+            <div>profile name </div>
+            <div>notification </div>
+            <div>profile button </div>
+            <div>new button </div>
+            <div>upload button</div>
+            <div>share button</div>
+        </div>
+
+        <div class="projects-announcements-trending-container">
+
+        <div class="projects-container">
+            <h3>your projects</h3>
+            <div class="card">
+                <p class="title">Super cool project</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              <div class="card">
+                <p class="title">less cool project</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              <div class="card">
+                <p class="title">impossible app</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              <div class="card">
+                <p class="title">easy peasy app</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              <div class="card">
+                <p class="title">ad blocker</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              <div class="card">
+                <p class="title">money maker</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+        </div>
+
+        <div class="announcements-trending-container">
+
+        <div class="announcements-container">
+            <h3>announcements</h3>
+            <div class="card">
+                <p class="title">site maintenance</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            </div>
+            <div class="card">
+                <p class="title">community share day</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            </div>
+            <div class="card">
+                <p class="title">updated privacy policy</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            </div>
+        </div>
+
+        <div class="trending-container">
+            <h3>trending</h3>
+            <div class="card">
+                <p class="title">@tegan</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            </div>
+            <div class="card">
+                <p class="title">@morgan</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            </div>
+            <div class="card">
+                <p class="title">@kendall</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            </div>
+            <div class="card">
+                <p class="title">@alex</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+
+
+    </div>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------------------------
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    
+}
+
+.container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 0;
+    
+
+}
+
+
+.sidebar{
+    background-color: cyan;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 50px;
+    column-gap: 50px;
+    grid-row: 1/ 3;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+li{
+    list-style-type: none;
+    padding: 10px;
+    
+}
+
+ul{
+    text-align: left;
+    color: white;
+   
+}
+
+.header{
+    background-color: darkgrey;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    
+    
+
+   
+}
+
+
+.projects-container .card{
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
+    padding: 16px;
+    
+    width: 300px;
+}
+
+.announcements-container .card{
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
+    padding: 16px;
+    
+    width: 300px;
+
+}
+
+.trending-container .card{
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
+    padding: 16px;
+    
+    width: 300px;
+}
+
+
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+   
+    
+}
+
+.announcements-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 15px;
+    
+}
+
+
+.projects-announcements-trending-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+
+
+a{
+    cursor: pointer;
+    color: white;
+    text-decoration: white;
+    font-size: larger;
+}
+
+
+h3{
+    margin: 0;
+}
+-------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><h1>Dashboard</h1></li>
+            </ul>
+            
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Messages</a></li>
+                <li><a href="">History</a></li>
+                <li><a href="">Tasks</a></li>
+                <li><a href="">Communities</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Settings</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Privacy</a></li>
+            </ul>
+
+        </div>
+        <div class="header">
+            <div class="header-stuff-container">
+                <div class="first-header-container">
+                    <div class="search-container">    
+                        <span class="material-symbols-outlined">search</span>
+                        <input type="text">
+                    </div>
+                    <span class="material-symbols-outlined">notifications</span>
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <div>Morgan Oakley </div>
+                </div>
+            
+                <div class="second-header-container">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <div>Hi there,<br> Morgan Oakley (@morgan)</div>
+                    <span class="material-symbols-outlined">add</span>
+                    <span class="material-symbols-outlined">upload</span>
+                    <span class="material-symbols-outlined">share</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="secondary-container">
+            <div class="projects-container">
+                <div class="project-item">super cool project</div>
+                <div class="project-item">less cool project</div>
+                <div class="project-item">impossible app</div>
+                <div class="project-item">easy peasy app</div>
+                <div class="project-item">ad blocker</div>
+                <div class="project-item">money maker</div>
+
+            </div>
+            <div class="announcements-container">
+                <div class="announcement-item">site maintenance</div>
+                <div class="announcement-item">community share day</div>
+                <div class="announcement-item">updated privacy policy</div>
+                
+
+            </div>
+            <div class="trending-container">
+                <div class="trending-item">@tegan</div>
+                <div class="trending-item">@morgan</div>
+                <div class="trending-item">@kendall</div>
+                <div class="trending-item">@alex</div>
+            </div>
+        </div>
+    
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------
+body{
+    margin: 0;
+    
+    
+    
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+
+}
+
+.sidebar{
+    background-color: royalblue;
+    grid-row: span 2 ;
+    
+}
+
+.header{
+    background-color: darkgrey;
+    margin: 0;
+    
+    
+
+}
+
+.header-stuff-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+.secondary-container{
+    display: flex;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: slategray;
+
+}
+
+.project-item, .trending-item, .announcement-item {
+    
+    background: white;
+    width: 240px;
+    height: 160px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+ 
+    
+
+
+}
+-------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><h1>Dashboard</h1></li>
+            </ul>
+            
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Messages</a></li>
+                <li><a href="">History</a></li>
+                <li><a href="">Tasks</a></li>
+                <li><a href="">Communities</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Settings</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Privacy</a></li>
+            </ul>
+
+        </div>
+        <div class="header">
+            <div class="header-stuff-container">
+                <div class="first-header-container">
+
+                    <div class="search-container">    
+                        <span class="material-symbols-outlined">search</span>
+                        <input type="text">
+                    </div>
+                    <div class="notification-account-container">
+                        <span class="material-symbols-outlined">notifications</span>
+                        <span class="material-symbols-outlined">account_circle</span>
+                        <div>Morgan Oakley </div>
+                    </div>
+
+                </div>
+            
+                <div class="second-header-container">
+                    <div class="hello-account-container">
+                        <span class="dot"></span>
+                        <div>Hi there,<br> Morgan Oakley (@morgan)</div>
+                    </div>
+                    <div class="add-upload-share-container">
+                        <span class="material-symbols-outlined">add</span>
+                        <span class="material-symbols-outlined">upload</span>
+                        <span class="material-symbols-outlined">share</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="projects-announcements-trending-container">
+
+            <div class="title-projects-container">
+                <div class="projects-title">Your Projects</div>
+                <div class="projects-container">
+                    <div class="projects-wrapper">
+                        <div class="project-item">super cool project</div>
+                        <div class="project-item">less cool project</div>
+                    </div>
+                    <div class="projects-wrapper">
+                        <div class="project-item">impossible app</div>
+                        <div class="project-item">easy peasy app</div>
+                    </div>
+                    <div class="projects-wrapper">
+                        <div class="project-item">ad blocker</div>
+                        <div class="project-item">money maker</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="announcements-trending-container">
+            <div class="title-announcements-container">
+                <div class="announcements-title">Announcements</div>
+                <div class="announcements-container">
+                    <div class="announcements-item">site maintainance</div>
+                    <div class="announcements-item">community share day</div>
+                    <div class="announcements-item">updated privacy policy</div>
+
+                </div>
+            </div>
+        
+
+            <div class="title-trending-container">
+                <div class="trending-title">Trending</div>
+                <div class="trending-container">
+                    <div class="trending-item">@tegan</div>
+                    <div class="trending-item">@morgan</div>
+                    <div class="trending-item">@kendall</div>
+                    <div class="trending-item">@alex</div>
+                </div>
+            </div>
+            </div>
+
+    </div>
+    
+</body>
+</html>
+-------------------------------------------------------------------------------------
+body{
+    margin: 0;
+    
+    
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+
+}
+
+.sidebar{
+    
+    background-color: royalblue;
+    grid-row: span 2 ;
+    margin: 0;
+    
+}
+
+.header{
+    background-color: darkgrey;
+    margin: 0;
+    grid-template-columns: span 2;
+
+}
+
+.header-stuff-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+.projects-announcements-trending-container{
+    background: slategray;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.projects-container{
+  grid-row: span 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+
+}
+
+.projects-wrapper{
+    display: flex;
+    
+}
+
+.project-item{
+    background: white;
+    width:230px;
+    height:130px;
+    margin:16px;
+    
+    border-radius: 10px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+}
+
+.dot {
+  height: 60px;
+  width: 60px;
+  background-color: grey;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+input{
+    border-radius: 10px;
+    width: 500px;
+}
+
+.first-header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hello-account-container{
+    display: flex;
+    gap: 15px;
+}
+
+.add-upload-share-container{
+    display: flex;
+    gap: 15px;
+    
+}
+
+.notification-account-container{
+    display: flex;
+    gap: 15px;
+}
+
+.search-container{
+   display: flex;
+   gap: 8px;
+}
+
+.announcements-trending-container{
+    grid-column: span 3;
+}
+
+.announcements-item{
+    background: white;
+    width:180px;
+    height:60px;
+   
+    
+    border-radius: 2px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+}
+
+.trending-item{
+    background: white;
+    width:180px;
+    height:40px;
+   
+    
+    border-radius: 2px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+}
+
+*{
+    outline: 1px solid red !important;
+}

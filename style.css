@@ -1,0 +1,179 @@
+
+ 
+body{
+    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#header{
+    background-color: blue;
+    
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    
+}
+
+#sidebar{
+    background-color: cadetblue;
+    
+    grid-column: 1/2;
+    grid-row: 2/6;
+
+    
+}
+
+#sidebar-title{
+    margin-left: 10px;
+    color: white;
+}
+
+#content-body{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightblue;
+
+    grid-column: 2/6;
+    grid-row: 2/6;
+
+    overflow: auto;
+}
+
+h1,li,h2,#account-name{
+    color: white;
+}
+
+ul li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+#home-li, #profile-li, #messages-li,
+ #history-li, #tasks-li, #communities-li, 
+ #settings-li, #support-li,#privacy-li{
+    display: flex;
+    flex-direction: row;
+}
+
+.material-symbols-outlined{
+    color: white;
+}
+
+#account-circle{
+    font-size: xx-large;
+}
+
+#search-bar{
+    border-radius: 20px;
+
+}
+
+#profile-container{
+    display: flex;
+    
+}
+
+#account-name, #account-circle, #notifications{
+    margin-right: 10px;
+}
+
+#profile-search-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#account-circle-2{
+    font-size: 50px;
+}
+
+#account-username{
+    font-size: larger;
+    color: white;
+}
+
+#greeting{
+    font-size: small;
+}
+
+#profile-name-container{
+    display: flex;
+}
+
+#new-button,#upload-button, #share-button{
+    background-color: white;
+    
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#profile-button-container{
+    display: flex;
+}
+
+#profile-header-container-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#card-container{
+    height: 100%;
+    width: 100%;
+    
+    
+   
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    
+
+    
+}
+
+.card{
+    height: 125px;
+    width: 200px;
+    background-color: white;
+    
+    
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+
+    text-align: left;
+
+}
+
+.announcements-card{
+    height: 60px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.trending-card{
+    height: 60px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#projects-title{
+    margin-left: 20px;
+}
